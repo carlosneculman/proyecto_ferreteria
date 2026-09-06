@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Carrito - Ferreteria Los Maestros</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="funciones.js"></script>
+</head>
+
+<body>
+
+  <!-- menu de navegacion -->
+  <div class="nav">
+    <a href="index.html">Inicio</a>
+    <a href="catalogo.html">Catalogo</a>
+    <a href="carrito.html">Carrito</a>
+    <a href="pedidos.html">Mis Pedidos</a>
+    <a href="cuenta.html">Cuenta</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="login.html">Iniciar Sesion</a>
+    <a href="registro.html">Registrarse</a>
+  </div>
+
+  <h1>Carrito de Compras</h1>
+
+  <div class="container">
+
+    <p>Estos son los productos que has agregado al carrito.</p>
+
+    <table>
+      <tr>
+        <th>Producto</th>
+        <th>Precio</th>
+        <th>Cantidad</th>
+        <th>Subtotal</th>
+        <th></th>
+      </tr>
+      <tr>
+        <td>Cemento Polpaico gris 25 kg</td>
+        <td>$5.990</td>
+        <td><input type="number" value="10"></td>
+        <td>$59.900</td>
+        <td><button>Quitar</button></td>
+      </tr>
+      <tr>
+        <td>Martillo carpintero 500g</td>
+        <td>$7.990</td>
+        <td><input type="number" value="1"></td>
+        <td>$7.990</td>
+        <td><button>Quitar</button></td>
+      </tr>
+      <tr>
+        <td>Tornillo autoperf. 8x1" caja 100 unid.</td>
+        <td>$2.990</td>
+        <td><input type="number" value="3"></td>
+        <td>$8.970</td>
+        <td><button>Quitar</button></td>
+      </tr>
+    </table>
+
+    <h2>Total: $76.860</h2>
+
+    <hr>
+
+    <h2>Forma de entrega</h2>
+    <input type="radio" name="entrega" id="retiro" checked>
+    <label for="retiro">Retiro en tienda</label><br>
+    <input type="radio" name="entrega" id="despacho">
+    <label for="despacho">Despacho a domicilio</label>
+
+    <p>Direccion de despacho (si aplica):</p>
+    <input type="text" placeholder="Calle, numero, comuna">
+
+    <hr>
+
+    <h2>Forma de pago</h2>
+    <input type="radio" name="pago" id="pago-tienda" checked>
+    <label for="pago-tienda">Pago en tienda</label><br>
+    <input type="radio" name="pago" id="pago-cuenta">
+    <label for="pago-cuenta">Cargar a cuenta corriente</label>
+
+    <br><br>
+    <button>Confirmar Pedido</button>
+
+  </div>
+
+</body>
+
+</html>

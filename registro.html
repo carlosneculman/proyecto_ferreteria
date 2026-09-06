@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registrarse - Ferreteria Los Maestros</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="funciones.js"></script>
+</head>
+<body>
+
+  <!-- menu de navegacion -->
+  <div class="nav">
+    <a href="index.html">Inicio</a>
+    <a href="catalogo.html">Catalogo</a>
+    <a href="carrito.html">Carrito</a>
+    <a href="pedidos.html">Mis Pedidos</a>
+    <a href="cuenta.html">Cuenta</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="login.html">Iniciar Sesion</a>
+    <a href="registro.html">Registrarse</a>
+  </div>
+
+  <h1>Crear Cuenta</h1>
+
+  <div class="container">
+
+    <p>Registro para clientes particulares y contratistas.</p>
+
+    <form>
+
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre">
+
+      <label for="correo">Correo electronico:</label>
+      <input type="text" id="correo" name="correo">
+
+      <label for="telefono">Telefono:</label>
+      <input type="text" id="telefono" name="telefono">
+
+      <label for="direccion">Direccion:</label>
+      <input type="text" id="direccion" name="direccion">
+
+      <label for="tipo">Tipo de cliente:</label>
+      <select id="tipo" name="tipo">
+        <option>Particular</option>
+        <option>Contratista</option>
+      </select>
+
+      <label for="clave">Contraseña:</label>
+      <input type="password" id="clave" name="clave">
+
+      <label for="clave2">Repetir contraseña:</label>
+      <input type="password" id="clave2" name="clave2">
+
+      <button type="submit">Registrarme</button>
+
+    </form>
+
+    <br>
+    <p>Ya tienes cuenta? <a href="login.html">Inicia sesion aqui</a></p>
+
+  </div>
+
+</body>
+</html>
+
